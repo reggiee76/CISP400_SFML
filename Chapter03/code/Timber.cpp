@@ -75,6 +75,7 @@ int main()
 
 	// Variables to control time itself
 	Clock clock;
+	
 	// Time bar
 	RectangleShape timeBar;
 	float timeBarStartWidth = 400;
@@ -88,22 +89,28 @@ int main()
 
 	// Track whether the game is running
 	bool paused = true;
+	
 	// Draw some text
 	int score = 0;
 	Text messageText;
 	Text scoreText;
+	
 	// We need to choose a font
 	Font font;
 	font.loadFromFile("fonts/KOMIKAP_.ttf");
+	
 	// Set the font to our message
 	messageText.setFont(font);
 	scoreText.setFont(font);
+	
 	// Assign the actual message
 	messageText.setString("Press Enter to start!");
 	scoreText.setString("Score = 0");
+	
 	// Make it really big
 	messageText.setCharacterSize(75);
 	scoreText.setCharacterSize(100);
+	
 	// Choose a color
 	messageText.setFillColor(Color::White);
 	scoreText.setFillColor(Color::White);
